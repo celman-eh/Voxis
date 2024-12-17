@@ -15,7 +15,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { EllipsisVertical } from "lucide-react";
+import { EllipsisVertical, House, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 
@@ -47,15 +47,15 @@ export default function PromptForm() {
 
 
                         <DropdownMenuCheckboxItem
-                            className="text-muted-foreground hover:bg-gray-700"
+                            className="text-muted-foreground hover:bg-gray-700 flex gap-2"
                             onClick={handleNavigateToAbout}
                         >
-                            About
+                            <House />About
                         </DropdownMenuCheckboxItem>
-                        <DropdownMenuCheckboxItem className="text-destructive hover:bg-gray-700"
+                        <DropdownMenuCheckboxItem className="text-destructive hover:bg-gray-700 flex gap-2"
                             onClick={() => setResponses([])}
                         >
-                            Clear Chat
+                            <Trash2 /> Clear chat
                         </DropdownMenuCheckboxItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
