@@ -10,7 +10,7 @@ export function useChatLogic() {
   const handleSubmit = async (e: FormEvent): Promise<void> => {
     e.preventDefault();
     setLoading(true);
-    const currentPrompt = prompt; // Capture prompt for async
+    const currentPrompt = prompt;
     setPrompt("");
 
     try {

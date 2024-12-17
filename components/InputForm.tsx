@@ -13,11 +13,11 @@ interface InputFormProps {
 export default function InputForm({ prompt, setPrompt, loading, handleSubmit }: InputFormProps) {
     const handleFormSubmit = (e: FormEvent) => {
         if (prompt.trim() === "") {
-            // Prevent form submission if prompt is empty
+
             e.preventDefault();
             return;
         }
-        handleSubmit(e); // Call the handleSubmit function if the prompt is valid
+        handleSubmit(e);
     };
 
     return (

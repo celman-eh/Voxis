@@ -18,7 +18,7 @@ export default function ChatHistory({ responses, loading }: ChatHistoryProps) {
                         }`}
                 >
                     <div className="text-sm text-gray-600 font-semibold">
-                        {message.role === "user" ? "You" : "AI"}
+                        {message.role === "user" ? "You" : "Botlify"}
                     </div>
                     <div className="mt-1 text-lg text-gray-400">
                         <ReactMarkdown
@@ -44,7 +44,7 @@ export default function ChatHistory({ responses, loading }: ChatHistoryProps) {
             ))}
             {loading && (
                 <div className="self-start p-4 rounded-lg">
-                    <div className="text-sm text-gray-600 font-semibold">AI</div>
+                    <div className="text-sm text-gray-600 font-semibold">Botlify</div>
                     <div className="mt-1 text-lg text-gray-400 italic">Thinking...</div>
                 </div>
             )}
