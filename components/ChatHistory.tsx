@@ -14,7 +14,7 @@ export default function ChatHistory({ responses, loading }: ChatHistoryProps) {
             {responses.map((message, index) => (
                 <div
                     key={index}
-                    className={`p-4 rounded-lg ${message.role === "user" ? "self-end" : "self-start"
+                    className={`p-1 rounded-lg ${message.role === "user" ? "self-end" : "self-start"
                         }`}
                 >
                     <div className="text-sm text-gray-600 font-semibold">
@@ -27,11 +27,11 @@ export default function ChatHistory({ responses, loading }: ChatHistoryProps) {
                             components={{
                                 p({ children }) {
                                     // Add spacing and custom styles for paragraphs
-                                    return <p className="block my-8 leading-relaxed text-gray-300">{children}</p>;
+                                    return <p className="block my-2 leading-relaxed text-gray-300">{children}</p>;
                                 },
                                 strong({ children }) {
                                     // Bold text with emphasis
-                                    return <strong className="font-bold text-gray-100">{children}</strong>;
+                                    return <strong className="font-bold text-gray-300">{children}</strong>;
                                 },
                                 em({ children }) {
                                     // Italic text with subtle styling

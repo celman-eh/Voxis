@@ -38,7 +38,7 @@ export default function InputForm({ prompt, setPrompt, loading, handleSubmit }: 
                     rows={1}
                     required
                     aria-label="User input"
-                    placeholder="What can I help with?"
+                    placeholder="How can Voxis help you today?"
                 />
                 <Button
                     type="submit"

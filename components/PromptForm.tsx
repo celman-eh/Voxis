@@ -15,7 +15,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { EllipsisVertical, House, Trash2 } from "lucide-react";
+import { BadgeInfo, EllipsisVertical, House, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 
@@ -50,7 +50,7 @@ export default function PromptForm() {
                             className="text-muted-foreground hover:bg-gray-700 flex gap-2"
                             onClick={handleNavigateToAbout}
                         >
-                            <House />About
+                            <BadgeInfo />About
                         </DropdownMenuCheckboxItem>
                         <DropdownMenuCheckboxItem className="text-destructive hover:bg-gray-700 flex gap-2"
                             onClick={() => setResponses([])}
@@ -68,12 +68,7 @@ export default function PromptForm() {
 
 
             <InputForm prompt={prompt} setPrompt={setPrompt} loading={loading} handleSubmit={handleSubmit} />
-            <span
-                className="absolute bottom-50 left-1/2 transform -translate-x-1/2 text-2xl font-mono font-bold text-transparent bg-clip-text 
-             bg-gradient-to-r from-gray-500 via-gray-400 to-gray-900 whitespace-nowrap uppercase mt-4"
-            >
-                Continue your AI journey
-            </span>
+
 
 
 
