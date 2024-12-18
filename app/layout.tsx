@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Botlify",
+  title: "Voxis",
   description: "Your interactive chatbot powered by AI.",
 };
 

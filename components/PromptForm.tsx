@@ -70,8 +70,7 @@ export default function PromptForm() {
             <InputForm prompt={prompt} setPrompt={setPrompt} loading={loading} handleSubmit={handleSubmit} />
             <span
                 className="absolute bottom-50 left-1/2 transform -translate-x-1/2 text-2xl font-mono font-bold text-transparent bg-clip-text 
-             bg-gradient-to-r from-gray-500 via-gray-200 via-gray-300 via-gray-400 via-gray-500 via-gray-600 via-gray-700 
-             via-lime-700 via-gray-800 to-lime-900 whitespace-nowrap uppercase"
+             bg-gradient-to-r from-gray-500 via-gray-400 to-gray-900 whitespace-nowrap uppercase mt-4"
             >
                 Continue your AI journey
             </span>
